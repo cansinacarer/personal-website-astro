@@ -1,0 +1,21 @@
+---
+import { SITE_TITLE, SITE_AUTHOR_GITHUB, SITE_AUTHOR_LINKEDIN, SITE_AUTHOR_MEDIUM } from '../consts';
+---
+<a href={`https://github.com/${SITE_AUTHOR_GITHUB}`} target="_blank">
+    <span>GitHub</span>
+</a>
+<a href={`https://www.linkedin.com/in/${SITE_AUTHOR_LINKEDIN}`} target="_blank">
+    <span>LinkedIn</span>
+</a>
+<a href={`https://medium.com/@${SITE_AUTHOR_MEDIUM}`} target="_blank">
+    <span>Medium</span>
+</a>
+
+<style>
+    a {
+        display: flex;
+		text-decoration: none;
+		padding: 1em 0.5em;
+		color: var(--black);
+    }
+</style>
